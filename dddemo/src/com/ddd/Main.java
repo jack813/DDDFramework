@@ -8,7 +8,7 @@ public class Main {
         System.out.println(job);
 
         JobManager jobManager = new JobManager();
-        Job[] jobs = (Job[]) jobManager.getOpportunityList(new JobProvider());
+        Job[] jobs = jobManager.getRecommandListByResume();
         System.out.println(jobs[0].toString());
 
         // sense #1

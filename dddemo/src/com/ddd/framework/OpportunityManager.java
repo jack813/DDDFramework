@@ -1,7 +1,7 @@
 package com.ddd.framework;
 
 public abstract class OpportunityManager {
-    public  Opportunity[] getOpportunityList(OpportunityProvider provider){
+    protected   Opportunity[] getOpportunityList(OpportunityProvider provider){
         Opportunity[] opportunities = provider.provide();
         marked(opportunities);
         getCaller();
